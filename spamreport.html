@@ -1,0 +1,32 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block contents %}
+
+         
+<section class="py-0" id="header">
+  <div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/hero-header.png' %}); background-position:right top; background-size:contain;"></div>
+  <!--/.bg-holder-->
+  <div class="container">
+    <div class="row align-items-center min-vh-75 min-vh-lg-100">
+      <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center">  
+            <h2>Model Prediction Output</h2><br>
+            <p><b>latitude: </b>{{object}}</p>
+            <p><b>longitude: </b>{{object1}}</p>
+            <p><b>wind_kph: </b>{{object2}}</p>
+            <p><b>wind_degree: </b>{{object3}}</p>
+            <p><b>pressure_mb: </b>{{object4}}</p>
+            <p><b>precip_in: </b>{{object5}}</p>
+            <p><b>humidity: </b>{{object6}}</p>
+            <p><b>cloud: </b>{{object7}}</p>
+            <p><b>Model Predicted Temperature: </b>{{object8}}</p>       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        
+{% endblock %}
+
